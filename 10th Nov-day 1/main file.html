@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- class -->
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 6px;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+<h2 id="C1">Abhishek</h2>
+<p>Technical Head.</p>
+</div>
+
+<div class="city">
+<h2>Shreya</h2>
+<p>Volunteer head.</p>
+</div>
+
+
+<!-- buttton click -->
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="Abhi">Abhishek</h2>
+<p>CFO.</p>
+
+<h2 class="Abhi">Shreya</h2>
+<p>CEO.</p>
+
+<h2 class="Abhi">Ali</h2>
+<p>Ali-Managing head</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("Abhi");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+
+<h1 id="one">Using id here</h1>
+<button onclick="Result()">see up side</button>
+
+<script>
+function Result() {
+  document.getElementById("one").innerHTML = "Changes done";}
+  </script>
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- iframes -->
+<iframe src="11111.html" height="200" width="200" title="Iframe Example"></iframe>
+
+<br>
+<!-- click to show date and time-->
+<button type="button"onclick="document.getElementById('date').innerHTML = Date()">
+Click here to display Date and Time.</button>
+
+<p id="date"></p>
+
+<!-- Changing size -->
+<br>
+<p id="help">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("help").style.fontSize = "25px";
+  document.getElementById("help").style.color = "red";
+  document.getElementById("help").style.backgroundColor = "yellow";
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+
+<!-- Picture -->
+<br>
+<script>
+  function picture(){
+    document.getElementById('myImage').src = pic;
+  }
+</script>
+
+<img id="myImage" src="dr.png" width="100" height="100">
+<p> Just added a picture by javascript function </p>
+
+<br>
+
+<img src="dr.png" width="100" height="100">
+<p> Added picture via image source.</p>
+<br>
+
+<!-- Responsive Text -->
+<p style="font-size:2vw;">Resize the browser window to see how the text size scales.This is a speech synthesis in English
+just do the resizing of the window. Dont go with the lines. all are written to just increase the lines.</p>
+
+<br>
+<!-- Section which is used to clearly show the section between developer and viewer. -->
+<section>
+  <h1>Abhishek's portfolio</h1>
+  <p>I am 3rd Year student persuing Computer sience and Engineering with Specialization in Big DATA Analytics.
+    ARTH learner- DEVOPS- AWS. And you can see i did'nt have initialized any heading or anything.
+  Just have added a section as a part  </p>
+
+<!-- Adding media- Video -->
+<video width="320" height="240" controls>
+  <source src="cars.mp4" type="video/mp4">
+
+</video>
+
+<br>
+<br>
+<!-- Adding Audio file -->
+<audio controls>
+  <source src="muzz.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+<br>
+<!-- Adding video from Youtube -->
+<iframe width="420" height="245" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+
+<p><a href="#C1">Jump to Top- near Abhishek profile</a></p>
+
+</body>
+</html>
